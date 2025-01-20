@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Health Chatbot Prototype</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Mental Health Chatbot Prototype</h1>
+    <div id="chat-box" class="chat-box">
+        <div class="message bot">
+            Hello, I’m here to listen. Please remember: I am not a licensed mental health professional.
+            If you’re in crisis, please call your local emergency services immediately.
+        </div>
+    </div>
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Link to the JavaScript file -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
