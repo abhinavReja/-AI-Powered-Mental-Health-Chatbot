@@ -1,0 +1,64 @@
+/* General container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Chat box styling */
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Message styling */
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style for user messages */
+.message.user {
+    background-color: #e0f7fa;
+    text-align: right;
+    color: #006064;
+}
+
+/* Style for bot messages */
+.message.bot {
+    background-color: #e8f5e9;
+    text-align: left;
+    color: #2e7d32;
+}
+
+/* Input area styling */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #45a049;
+}
